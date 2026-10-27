@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a2b">
+  <meta name="description" content="The AI Explorer — an interactive visual journey through Artificial Intelligence.">
+  <title>The AI Explorer — an interactive AI book</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js" defer></script>
+  <script src="book.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="The AI Explorer home"><span class="wordmark-mark">✳</span> THE AI EXPLORER</a>
+    <div class="authors">Aiganym Kabdylashim <span>·</span> Manat Dana <span>·</span> Zhannur Bekbolat</div>
+  </header>
+
+  <main id="top">
+    <section class="reader" aria-label="Interactive book reader">
+      <div class="reader-topline"><span class="live-dot"></span><span id="reader-status">READY TO EXPLORE</span><span class="topline-rule"></span><span class="hint">CLICK THE RIGHT PAGE OR DRAG TO TURN</span></div>
+      <div class="book-stage">
+        <div id="book" aria-label="The AI Explorer book"></div>
+      </div>
+      <div class="reader-controls">
+        <div class="page-counter"><span id="page-label">COVER</span><span class="counter-divider">/</span><span id="page-count">32</span></div>
+        <button id="open-button" class="open-button" type="button">OPEN BOOK <span aria-hidden="true">↗</span></button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
